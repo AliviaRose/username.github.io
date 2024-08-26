@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head><body><Style>body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Other styles remain the same */
+</Style></body>
+</body>
+<style>/* Basic reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        line-height: 1.6;
+    }
+    
+    header {
+        background: #87CEFA;
+        color: #062e4e;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .logo h1 {
+        margin: 0;
+    }
+    
+    header nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    header nav ul li {
+        margin-left: 20px;
+    }
+    
+    header nav ul li a {
+        color: #062e4e;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background 0.3s;
+    }
+    
+    header nav ul li a:hover {
+        background: #555;
+    }
+    
+    .hero {
+        background: url('hero.jpg') no-repeat center center/cover;
+        color: #062e4e;
+        color: ;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .hero button {
+        background: #87CEFA;
+        color: #062e4e;
+        color: ;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .hero button:hover {
+        background:#87CEFA;
+    }
+    
+    section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    section#about img {
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    .service-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .service {
+        flex-basis: 30%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .service img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    form input, form textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+    }
+    
+    form button {
+        background: #87CEFA;
+        color: #062e4e;
+        color: ;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    form button:hover {
+        background: #87CEFA;
+    }
+    
+    footer {
+        background: #87CEFA;
+        color: #062e4e;
+        color: ;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    </style></body>
+    <header>
+        <div class="logo">
+            <h1>My Business</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to My Business</h2>
+        <p>We offer the best services in the industry.</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our company has been providing top-notch services for over 10 years.</p>
+        <img src="about.jpg" alt="About our company">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="service1.jpg" alt="Service 1">
+                <h3>Service 1</h3>
+                <p>Details about service 1.</p>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Service 2">
+                <h3>Service 2</h3>
+                <p>Details about service 2.</p>
+            </div>
+            <div class="service">
+                <img src="service3.jpg" alt="Service 3">
+                <h3>Service 3</h3>
+                <p>Details about service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Business. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+    </script>
+</body>
+
+</html>
